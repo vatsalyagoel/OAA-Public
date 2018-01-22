@@ -138,7 +138,9 @@ let mocha = lazypipe()
     });
 
 let istanbul = lazypipe()
-    .pipe(plugins.istanbul.writeReports)
+    .pipe(plugins.istanbul.writeReports, {
+      reporters: ['lcov', 'cobertura']
+    })
     .pipe(plugins.istanbulEnforcer, {
         thresholds: {
             global: {
