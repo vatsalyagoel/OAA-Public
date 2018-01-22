@@ -11,5 +11,6 @@ module.exports = {
 
   STEAM_API_KEY: '',
   // Control debug level for modules using visionmedia/debug
-  DEBUG: ''
+  DEBUG: '',
+  MONGODB_TEST_URI: 'mongodb://localhost/oaa-dev'
 };

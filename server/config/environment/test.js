@@ -6,7 +6,7 @@
 module.exports = {
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://localhost/oaa-test'
+    uri: process.env.MONGODB_TEST_URI
   },
   sequelize: {
     uri: 'sqlite://',
