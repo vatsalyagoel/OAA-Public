@@ -151,7 +151,7 @@ let istanbul = lazypipe()
             }
         },
         coverageDirectory: './coverage',
-        rootDirectory : ''
+        rootDirectory : './'
     });
 
 /********************
