@@ -35,12 +35,7 @@ module.exports = function(config) {
         type: 'json',
         subdir: '.',
         file: 'client-coverage.json'
-      },
-      {
-        type: 'cobertura',
-        subdir: '.',
-        file: 'cobertura-karma.txt'
-      },],
+      }],
       dir: 'coverage/' //path to created html doc
     },
 
