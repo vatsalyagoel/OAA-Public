@@ -1,11 +1,11 @@
 'use strict';
 
-import tournament from './tournament.component';
-import {TournamentController} from './tournament.component';
+import leaderboards from './leaderboards.component';
+import {LeaderboardsController} from './leaderboards.component';
 
 describe('Component: TournamentComponent', function() {
 
-  beforeEach(angular.mock.module(tournament));
+  beforeEach(angular.mock.module(leaderboards));
   beforeEach(angular.mock.module('socketMock'));
 
   var scope;

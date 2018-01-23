@@ -5,9 +5,12 @@ export default function routes($routeProvider) {
     'ngInject';
     $routeProvider
       .when('/login', {
-        template: require('./login/login.html'),
-        controller: 'LoginController',
-        controllerAs: 'vm'
+        name: 'Login',
+        referrer: '/',
+        template: '',
+        controller: function($window) {
+          $window.location.href = '/auth/steam';
+        }
       })
       .when('/logout', {
         name: 'logout',

@@ -4,13 +4,9 @@ const ngRoute = require('angular-route');
 
 
 import routing from './account.routes';
-import login from './login';
-import oauthButtons from '../../components/oauth-buttons';
 
 export default angular.module('oaaApp.account', [
-    ngRoute,
-    login,
-    oauthButtons
+    ngRoute
 ])
     .config(routing)
     .run(function($rootScope) {

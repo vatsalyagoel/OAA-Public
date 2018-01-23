@@ -20,7 +20,7 @@
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-        <li ng-hide="$ctrl.isLoggedIn()" ng-class="{active: $ctrl.isActive('/login')}"><a href="/login">Login</a></li>
+        <li ng-hide="$ctrl.isLoggedIn()"><a href="/login"><i class="fa fa-steam"></i> Login with Steam</a></li>
         <li ng-show="$ctrl.isLoggedIn()"><p class="navbar-text">Hello {{ $ctrl.getCurrentUser().name }}</p> </li>
         <li ng-show="$ctrl.isLoggedIn()"><a href="/logout">Logout</a></li>
       </ul>

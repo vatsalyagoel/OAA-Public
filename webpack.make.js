@@ -193,6 +193,7 @@ module.exports = function makeWebpackConfig(options) {
             loaders: ['style', 'css', 'sass'],
             include: [
                 path.resolve(__dirname, 'node_modules/bootstrap-sass/assets/stylesheets/*.scss'),
+                path.resolve(__dirname, 'node_modules/bootswatch/darkly/*.scss'),
                 path.resolve(__dirname, 'client/app/app.scss')
             ]
 

@@ -10,6 +10,10 @@ export class NavbarComponent {
   {
     'title': 'Tournament',
     'link': '/tournament'
+  },
+  {
+    'title': 'Leaderboards',
+    'link': '/leaderboards'
   }];
   $location;
   isLoggedIn: Function;
