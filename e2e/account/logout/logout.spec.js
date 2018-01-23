@@ -26,7 +26,7 @@ describe('Logout View', function() {
       .finally(function() {
         browser.wait(function() {
             return browser.executeScript('return !!window.angular');
-        }, 10000).then(done);
+        }, 100000).then(done);
       });
   });
 
